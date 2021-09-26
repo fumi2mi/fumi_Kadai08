@@ -12,6 +12,7 @@ class GreenViewController: UIViewController {
     @IBOutlet weak private var greenSlider: UISlider!
 
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         greenLabel.text = "\(ValueData.sliderValue)"
         greenSlider.value = ValueData.sliderValue
     }

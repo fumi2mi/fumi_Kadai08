@@ -12,6 +12,7 @@ class PinkViewController: UIViewController {
     @IBOutlet weak private var pinkSlider: UISlider!
 
     override internal func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         pinkLabel.text = "\(ValueData.sliderValue)"
         pinkSlider.value = ValueData.sliderValue
     }
