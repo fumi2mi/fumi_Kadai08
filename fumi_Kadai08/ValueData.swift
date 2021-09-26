@@ -7,6 +7,6 @@
 
 import Foundation
 
-internal struct ValueData {
+struct ValueData {
     static var sliderValue: Float = 0.0
 }
