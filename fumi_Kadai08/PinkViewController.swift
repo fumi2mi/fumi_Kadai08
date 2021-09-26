@@ -8,17 +8,17 @@
 import UIKit
 
 class PinkViewController: UIViewController {
-    @IBOutlet weak private var pinkLabel: UILabel!
-    @IBOutlet weak private var pinkSlider: UISlider!
+    @IBOutlet weak private var valueLabel: UILabel!
+    @IBOutlet weak private var valueSlider: UISlider!
 
     override internal func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        pinkLabel.text = "\(ValueData.sliderValue)"
-        pinkSlider.value = ValueData.sliderValue
+        valueLabel.text = "\(ValueData.sliderValue)"
+        valueSlider.value = ValueData.sliderValue
     }
 
     @IBAction private func pinkSliderChanged(_ sender: Any) {
-        pinkLabel.text = "\(pinkSlider.value)"
-        ValueData.sliderValue = pinkSlider.value
+        valueLabel.text = "\(valueSlider.value)"
+        ValueData.sliderValue = valueSlider.value
     }
 }
